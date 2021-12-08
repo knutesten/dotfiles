@@ -1,7 +1,7 @@
 configuration {
   modi: "run,drun,window";
   width: 20;
-  font: "Source Code Pro 14";
+  font: "Source Code Pro 25";
   terminal: "alacritty";
   disable-history: false;
   sidebar-mode: true;
@@ -24,28 +24,46 @@ configuration {
 }
 
 window {
+  background-color: @bg;
   padding: 30px;
   border-radius: 5px;
 }
 
+inputbar {
+  padding: 20px;
+}
+
 prompt, entry {
   text-color: @fg;
-  padding: 3px;
+}
+
+listview {
+  background-color: @bg;
 }
 
 element {
-  border-radius: 2px;
-  padding: 4px;
+  background-color: @bg;
+  padding: 5px;
 }
 
-element selected {
-  background-color: @fg;
-  text-color: @bg;
+element normal.normal {
+  background-color: @bg;
+}
+
+element alternate.normal {
+  background-color: @bg;
+}
+
+element-text {
+  text-color: @fg;
+}
+
+button {
+  text-color: @fg;
 }
 
 button selected {
   background-color: @fg;
   text-color: @bg;
-  border-radius: 2px;
-  padding: 3px;
 }
+
