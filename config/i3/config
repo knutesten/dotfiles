@@ -174,8 +174,7 @@ bindsym $mod+r mode "resize"
 
 # gaps
 for_window [class=".*"] border none
-gaps inner 10
-gaps outer 20
+gaps inner 5
 
 # Set background 
 exec --no-startup-id feh --bg-scale --randomize ~/wallpapers/*
