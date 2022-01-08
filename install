@@ -3,7 +3,7 @@
 sudo pacman -Sy \
      feh vim zsh i3-gaps i3lock i3status dmenu ttf-roboto \
      adobe-source-code-pro-fonts xorg xorg-init git openssh rofi alacaritty \
-     emacs noto-fonts tex-gyre-fonts zip unzip wpa_supplicant
+     emacs noto-fonts tex-gyre-fonts zip unzip wpa_supplicant alsa-utils
 
 # Create .config folder if it does not exist
 mkdir -p $HOME/.config
