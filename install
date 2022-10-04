@@ -7,12 +7,12 @@ mkdir -p $HOME/.config
 mkdir -p $HOME/wallpapers
 
 # Disable plasma spash screen
-if [ -f /usr/bin/ksplashqml ]; then
-  sudo mv /usr/bin/ksplashqml /usr/bin/ksplashqml.old
-fi
+#if [ -f /usr/bin/ksplashqml ]; then
+#  sudo mv /usr/bin/ksplashqml /usr/bin/ksplashqml.old
+#fi
 
 # Install and enable norwegian osx keyboard layout
-sudo cp keyboard/no /usr/share/X11/xkb/symbols/no
+#sudo cp keyboard/no /usr/share/X11/xkb/symbols/no
 
 # Install i3 config
 mkdir -p $HOME/.config/i3
@@ -30,13 +30,13 @@ ln -sf $(pwd)/config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.y
 ln -sf $(pwd)/Xresources $HOME/.Xresources
 
 # Install xinitrc settings
-ln -sf $(pwd)/xinitrc $HOME/.xinitrc
+#ln -sf $(pwd)/xinitrc $HOME/.xinitrc
 
 # Install emacs settings
 ln -sf $(pwd)/spacemacs $HOME/.spacemacs
 
 # Install git settings
-ln -sf $(pwd)/gitconfig $HOME/.gitconfig
+#ln -sf $(pwd)/gitconfig $HOME/.gitconfig
 
 # Install zsh settings
 ln -sf $(pwd)/zshrc $HOME/.zshrc
@@ -45,15 +45,15 @@ ln -sf $(pwd)/zshrc $HOME/.zshrc
 ln -sf $(pwd)/tmux.conf $HOME/.tmux.conf
 
 # Install font settings
-sudo ln -sf $(pwd)/fonts/local.conf /etc/fonts/local.conf
+#sudo ln -sf $(pwd)/fonts/local.conf /etc/fonts/local.conf
 
-if [ ! -d $HOME/.sdkman ]; then
-  curl -s "https://get.sdkman.io" | bash
-fi
+#if [ ! -d $HOME/.sdkman ]; then
+#  curl -s "https://get.sdkman.io" | bash
+#fi
 
-if [ ! -d $HOME/.oh-my-zsh ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
+#if [ ! -d $HOME/.oh-my-zsh ]; then
+  #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#fi
 
 if [ ! -d $HOME/.emacs.d ]; then
   git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d

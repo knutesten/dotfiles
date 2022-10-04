@@ -1,0 +1,12 @@
+#!/bin/bash
+
+MAC=70:26:05:89:66:DE
+
+if bluetoothctl info $MAC | grep -q 'Connected: yes'; then
+  bluetoothctl disconnect $MAC
+else
+  bluetoothctl connect $MAC
+  sleep 1
+  bluetoothctl connect $MAC
+fi
+

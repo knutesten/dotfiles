@@ -1,0 +1,10 @@
+#!/bin/sh
+sleep 1
+
+xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x360 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-2-1 --off --output DP-2-2 --mode 3440x1440 --pos 1920x0 --rotate normal --output DP-2-3 --off
+
+/home/sb1a.sparebank1.no/a504adr/Code/feh/build/usr/bin/feh --bg-scale --randomize ~/Pictures/wallpapers/*
+
+sleep 1
+fix-keyboard
+

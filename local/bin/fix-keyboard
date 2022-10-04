@@ -1,0 +1,2 @@
+#!/bin/bash
+xkbcomp $HOME/Code/dotfiles/output.xkb $DISPLAY 2> /dev/null

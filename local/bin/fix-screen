@@ -1,0 +1,12 @@
+#!/bin/bash
+
+xrandr --auto
+
+if xrandr | grep -q 'eDP-1 connected' && xrandr | grep -q 'HDMI-2 connected'; then
+  echo Configuring display for location: Home
+  xrandr --output eDP-1 --primary --mode 1920x1080 --pos 2560x360 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-2-1 --off --output DP-2-2 --off --output DP-2-3 --off
+fi
+
+fix-keyboard
+/home/sb1a.sparebank1.no/a504adr/Code/feh/build/usr/bin/feh --bg-scale --randomize ~/Pictures/wallpapers/*
+
